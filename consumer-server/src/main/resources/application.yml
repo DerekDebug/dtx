@@ -1,0 +1,32 @@
+server:
+  port: 8011
+
+ribbon:
+  eureka:
+    enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: Http://localhost:8069/eureka
+
+mybatis:
+  type-aliases-package: com.example.consumerserver.entity.ConsumerUser
+  mapper-locations:
+    - classpath:com/example/consumerserver/dao/mapper/*.xml
+
+spring:
+  datasource:
+#    name: consumer-datasource
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    druid:
+      username: root
+      password: root
+      url: jdbc:mysql://localhost:3306/consumerdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+      driver-class-name: com.mysql.cj.jdbc.Driver
+#      initial-size: 1
+#      min-idle: 1
+#      max-active: 20
+
+  application:
+    name: consumer
