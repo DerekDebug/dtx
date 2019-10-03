@@ -99,7 +99,7 @@ public class RemoteServiceInvokeHandler implements InvocationHandler {
             } else if (num == 404) {
                 throw new Exception("业务服务器地址不存在，当前地址" + getRemoteUrl());
             } else {
-                throw new Exception("请求业务服务器失败，返回" + num);
+                throw new Exception("请求业务服务器失败，返回状态码" + num);
             }
         } catch (Exception e) {
             log.error("Execute remote method error", e);
