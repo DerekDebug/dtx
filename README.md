@@ -1,5 +1,5 @@
 # dtx
-参考阿里SEATA使用Eureak+netty，手写了一个简单的2pc的分布式事务流程
+拦截jdbc的connection使用Eureak+netty，手写了一个简单的2pc的分布式事务流程
 
 整体流程：
 ![Image text](https://raw.githubusercontent.com/FkingJavaboy/dtx/master/main.png)
