@@ -1,9 +1,8 @@
 # dtx
-拦截jdbc的connection使用Eureak+netty，手写了一个简单的2pc的分布式事务流程
+intercept the **connection** from jdbc
+use Eureak+netty -> 2pc distributed-transaction
 
-整体流程：
+process：
 ![Image text](https://raw.githubusercontent.com/FkingJavaboy/dtx/master/main.png)
-关键步骤：
+key：
 ![Image text](https://raw.githubusercontent.com/FkingJavaboy/dtx/master/key.png)
-
-有任何问题，欢迎给我留言！
